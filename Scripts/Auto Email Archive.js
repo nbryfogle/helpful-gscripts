@@ -9,7 +9,7 @@ function AutoArchive() {
 
       let date = thread.getLastMessageDate();
 
-      if (date < weekAgo) {
+      if (date < weekAgo && !thread.isUnread) {
         thread.moveToArchive();
         Logger.log('ID: %s; DATE: %s', thread.getId(), thread.getLastMessageDate());
       }
