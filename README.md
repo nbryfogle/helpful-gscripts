@@ -18,3 +18,12 @@ Make sure to remove any properties that you are not using, as it may cause the s
 
 **Services:**
 - Drive API Service
+
+## Email Labeler
+
+This script adds certain labels to an email, depending on what is in the email's body. I use this to label certain classes when I get notifications about them from Classroom, where the same email address sends every message and one teacher can have multiple classes.
+
+The `classes` dict at the top needs to be populated with `key/label` pairs, where `key` is the word or phrase to be searched for in the email's body, and `label` is the name of the label to apply to it.
+
+**Services:**
+- Gmail API Service
